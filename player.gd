@@ -5,6 +5,10 @@ const SPEED = 500
 const JUMP_VELOCITY = -700
 
 
+func respawn():
+	self.global_position = Vector2(35, 254)
+
+
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
